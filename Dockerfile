@@ -13,7 +13,7 @@
 #CMD ["java", "-jar", "simple-java-maven-app.jar"]
 
 # Use a base image that has Maven and Java installed
-FROM maven:3.8.4-openjdk-11-slim AS build
+FROM maven:3.8.6-openjdk-11-slim AS build
 
 # Set the working directory inside the container
 WORKDIR /app
