@@ -38,7 +38,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the built JAR file from the previous stage
-COPY --from=build /app/target/simple-java-maven-app.jar .
+COPY --from=build /app/target/my-app.jar .
 
 # Specify the command to run the JAR file
-CMD ["java", "-jar", "simple-java-maven-app.jar"]
+CMD ["java", "-jar", "my-app.jar"]
