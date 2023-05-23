@@ -37,6 +37,8 @@ FROM openjdk:11-jre-slim
 # Set the working directory inside the container
 WORKDIR /app
 
+RUN ls -al
+
 # Copy the built JAR file from the previous stage
 COPY --from=build /app/target/my-app.jar .
 
