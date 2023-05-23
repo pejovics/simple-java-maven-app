@@ -27,6 +27,8 @@ RUN mvn dependency:go-offline
 # Copy the project source code to the container
 COPY src ./src
 
+RUN mvn install:install-file
+
 # Build the project with Maven
 RUN mvn clean install
 
