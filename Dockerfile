@@ -40,7 +40,7 @@ WORKDIR /app
 RUN ls -al
 
 # Copy the built JAR file from the previous stage
-COPY --from=build /app/target/my-app.jar .
+COPY --from=build /app/target/my-app-1.0-SNAPSHOT.jar .
 
 # Specify the command to run the JAR file
-CMD ["java", "-jar", "my-app.jar"]
+CMD ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"]
