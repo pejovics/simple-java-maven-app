@@ -1,8 +1,9 @@
 
 FROM openjdk:11
 
-COPY . /app
+
 WORKDIR /app
+COPY . /app
 
 
 # Expose the port on which the application will listen
